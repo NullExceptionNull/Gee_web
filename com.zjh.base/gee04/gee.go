@@ -26,7 +26,7 @@ type Engine struct {
 func New() *Engine {
 	engine := &Engine{router: newRouter()}
 	engine.RouterGroup = &RouterGroup{engine: engine}
-	engine.groups = []*RouterGroup{engine.RouterGroup}
+	engine.groups = []*RouterGroup{}
 	return engine
 }
 
